@@ -54,7 +54,7 @@ void getWeatherData()
   weatherDescription.toLowerCase();
   //  weatherLocation = root["name"].as<String>();
   //  country = root["sys"]["country"].as<String>();
-  cod = root["weather"]["id"];  // cod for general wheater
+  //cod = root["weather"]["id"];  // cod for general wheater
   temp = root["main"]["temp"];
   humidity = root["main"]["humidity"];
   pressure = root["main"]["pressure"];
@@ -68,7 +68,7 @@ void getWeatherData()
  getTimeLocal();
 
  // String windDirection = "N NOO SOS SWW NW";  // Windrichtungen N NO O SO S SW W NW immer 2 char lang
-  String windDirection = "N NEE SES SVV NV"; // correct is "N NE E SE S SV V NV"
+  String windDirection = "N NEE SES SVV NV"; // correct is "N NE E SE S SV V NV" ?
   
   int wr = (windDeg+22)%360/45;
 //  Serial.println(wr);
@@ -82,8 +82,9 @@ void getWeatherData()
   weatherString = "       " + dayName[w]  + "  " + String(d) + "." + String(mo) + "." + String(ye)+ "      ";
   weatherString +=   String(temp, 1) + deg + "C ";
   weatherString += "  umiditate: " + String(humidity) + "%  ";  // Luftfeuchtigkeit
-  weatherString += "  presiune: " + String(pressure) + "mmHg,  "; // Luftdruck
-
+//  weatherString += "  presiune: " + String(pressure) + "mmHg,  "; // Luftdruck
+  weatherString += "  presiune: " + String(pressure) + "mmHg  "; // Luftdruck
+/*
 if ((cod >= 200) and (cod <= 232)) weatherString+ = "furtuna, ";
 if ((cod >= 300) and (cod <= 321)) weatherString+ = "burnita, ";
 if ((cod >= 500) and (cod <= 531)) weatherString+ = "ploaie, ";
@@ -92,13 +93,14 @@ if ((cod >= 701) and (cod <= 781)) weatherString+ = "praf/ceata, ";
 if (cod == 800) weatherString+ = "cer senin ";
 if ((cod >= 801) and (cod <= 804)) weatherString+ = "innorat, ";
 if (cod != 800) weatherString += "  nori: " + String(clouds) + "%  "; // Regenrisiko
-if (windSpeed != 0)
-{
+*/
+//if (windSpeed != 0)
+//{
 //  weatherString += "  Wind: " + String(windSpeed, 1) + "m/s                "; // Windgeschwindigkeit
   weatherString += "  vant: " + String(3.6*windSpeed, 1) + "km/h  "; // Windgeschwindigkeit
   weatherString += String(windDeg) + deg + "  ";
   weatherString +=  arrowUp + "  " + windDirection.substring(2*wr,2*wr+2) + "                "; // Windgeschwindigkeit und Richtung
-}
+//}
   Serial.println(weatherString);  //Leh
 }
 
