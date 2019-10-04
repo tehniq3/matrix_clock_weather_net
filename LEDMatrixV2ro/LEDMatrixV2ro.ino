@@ -71,7 +71,7 @@ int clouds;
 float windSpeed;
 int windDeg;
 String date;
-int cod;
+//int cod;
 
 String WTemp, Datum, Zeit;
 String weatherString;
