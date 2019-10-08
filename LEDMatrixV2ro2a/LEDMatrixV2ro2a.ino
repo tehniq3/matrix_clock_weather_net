@@ -22,11 +22,11 @@
 
 
 /************************************(Wifi Einstellungen)**********************************/
-const char* ssid     = "bbk2";     // SSID of local network
-const char* password = "internet2";   // Password on network
+const char* ssid     = "niq_ro";     // SSID of local network
+const char* password = "NicuFLORICA";   // Password on network
 
 /**************************(openweathermap.org Einstellungen)*******************************/
-String weatherKey = "ca55295c4a1dce2688e0751d4b9a68de";
+String weatherKey = "ca54a688e0751d1dce24b9a65295c8de";
 
 
 
