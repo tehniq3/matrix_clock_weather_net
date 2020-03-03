@@ -8,10 +8,11 @@
  ** Lizenz: CC BY-NC-ND 2.5 CH                                                            **
  ********************************************************************************************/
 /*
- * ver.2ro - adapt for romanian language by Nicu FLORICA (niq_ro)
- * ver.2ro1 - add description for weather
- * ver.2ro3 - add arrow to wind dirrection
- * ver.2ro3a - chamge pins to be compatible with other projects
+ * ver.2ro - adapted for romanian language by Nicu FLORICA (niq_ro)
+ * ver.2ro1 - added description for weather
+ * ver.2ro3 - added arrow to wind dirrection
+ * ver.2ro3a - chamged pins to be compatible with other projects
+ * ver.2ro3a1 - added text rotate (0, 90,, 180 and 270 degree)
 */ 
 /************************( Importieren der genutzten Bibliotheken )************************/
 
@@ -24,13 +25,13 @@
 
 
 /************************************(Wifi Einstellungen)**********************************/
-const char* ssid     = "bbk2";     // SSID of local network
-const char* password = "internet2";   // Password on network
+const char* ssid     = "bere";     // SSID of local network
+const char* password = "bererece";   // Password on network
 /**************************(openweathermap.org Einstellungen)*******************************/
-String weatherKey = "07ceb123258e85768ac5109b91012441";
+String weatherKey = "08e85768ac5109b910127ceb12325441";
 
 String weatherLang = "&lang=en";
-String cityID = "680332"; //Craiova
+String cityID = "680332"; //Craiova, Romania
 
 
 // NTP Serverpool für die Schweiz:
