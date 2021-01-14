@@ -1,6 +1,15 @@
 # matrix_clock_weather_net
 original:https://youtu.be/BMY3TZdeMGw ( https://www.bastelgarage.ch/index.php )
 
+ * ver.2ro - adapted for romanian language by Nicu FLORICA (niq_ro)
+ * ver.2ro1 - added description for weather
+ * ver.2ro3 - added arrow to wind dirrection
+ * ver.2ro3a - chamged pins to be compatible with other projects
+ * ver.2ro3a1 - added text rotate (0, 90,, 180 and 270 degree)
+ * ver.2m4 - added phoresistor for control brightness
+ * ver.2m4a - increased time between changed brighness
+ * ver.2m5 - added OTA
+
 usefull information from https://openweathermap.org/weather-conditions
 
 ![test](https://github.com/tehniq3/matrix_clock_weather_net/blob/master/LEDMatricV2ro1.jpg)
