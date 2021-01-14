@@ -27,4 +27,4 @@ my articles;
 
 - https://nicuflorica.blogspot.com/2020/04/alta-versiune-de-ceas-animat-cu-date.html
 
-![full](https://1.bp.blogspot.com/-JsBCE5y0utY/XonfOhZ6NmI/AAAAAAAAb04/Z4wQ6mCO5L4u4h52qTMr-DrlsPR8SnzsgCLcBGAsYHQ/s320/marqueeclock_schematic.png)
+![full](https://1.bp.blogspot.com/-JsBCE5y0utY/XonfOhZ6NmI/AAAAAAAAb04/Z4wQ6mCO5L4u4h52qTMr-DrlsPR8SnzsgCLcBGAsYHQ/s1600/marqueeclock_schematic.png)
