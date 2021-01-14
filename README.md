@@ -17,3 +17,10 @@ usefull information from https://openweathermap.org/weather-conditions
 ![schema](https://1.bp.blogspot.com/-nNDzwGoRYHE/XcBzJ1GMmcI/AAAAAAAAa1A/GivAhHbv81Yo9Z9Kfyl70wr7OWEqess-wCLcBGAsYHQ/s1600/WeMos_D1_Mini_4MAX7219.png)
 
 ![definition](https://1.bp.blogspot.com/-z4VFtTgf9KA/XZm39yKVjRI/AAAAAAAAah8/X7Mf164rQD0NOY-MAGrxFexasE91BtzygCLcBGAsYHQ/s1600/conexion.jpg)
+
+
+my articles;
+
+- https://nicuflorica.blogspot.com/2019/10/alta-versiune-de-ceas-animat-cu-date.html
+
+- https://nicuflorica.blogspot.com/2019/11/alta-versiune-de-ceas-animat-cu-date.html
