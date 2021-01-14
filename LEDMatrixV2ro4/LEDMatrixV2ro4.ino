@@ -13,21 +13,20 @@
  * ver.2ro3 - added arrow to wind dirrection
  * ver.2ro3a - chamged pins to be compatible with other projects
  * ver.2ro3a1 - added text rotate (0, 90,, 180 and 270 degree)
- * ver.2m4 - add phoresistor for contrl brightness
+ * ver.2m4 - added phoresistor for control brightness
+ * ver.2m4a - increased time between changed brighness
 */ 
 /************************( Importieren der genutzten Bibliotheken )************************/
 
 #include "Arduino.h"
 #include <ESP8266WiFi.h>                    // https://www.youtube.com/watch?v=vhm09S15toI
-#include <ArduinoJson.h>                    // über Biblothek installieren
+#include <ArduinoJson.h>                    // über Biblothek installieren (ver.5.xxx)
 #include <Timezone.h>                       //https://github.com/JChristensen/Timezone
 #include <TimeLib.h>                        //https://github.com/PaulStoffregen/Time
 #include <WiFiUdp.h>
 
-/************************************(Wifi Einstellungen)**********************************/
 const char* ssid     = "beer";     // SSID of local network
 const char* password = "coldbeer";   // Password on network
-/**************************(openweathermap.org Einstellungen)*******************************/
 String weatherKey = "blablabla";  // APIkey from openweahtermap
 String weatherLang = "&lang=en";
 String cityID = "680332"; //Craiova, Romania 
@@ -115,6 +114,8 @@ float utcOffset = 2;
 long localEpoc = 0;
 long localMillisAtUpdate = 0;
 
+int lumina = 0;
+unsigned long tpmasura = 0;
 
 /*****************************************( Setup )****************************************/
 void setup()
@@ -166,10 +167,14 @@ void loop()
   getTimeLocal();
   showAnimClock();
 
-      int lumina = analogRead(A0);          //intensitate luminoasa functie de lumina ambianta
-      lumina = map(lumina, 0, 1023, 0, 4); //setare valori in intervalul 0-7
+       if (millis() - tpmasura > 5000) 
+      {
+      lumina = analogRead(A0);          //intensitate luminoasa functie de lumina ambianta
+      lumina = map(lumina, 0, 1023, 0, 7); //setare valori in intervalul 0-7
       Serial.print("brightness = ");
       Serial.print(lumina);
-      Serial.println (" / 4");
+      Serial.println (" / 7");
+      tpmasura = millis();    
       sendCmdAll(CMD_INTENSITY, lumina);
+      }
 }
