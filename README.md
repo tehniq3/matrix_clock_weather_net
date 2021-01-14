@@ -24,3 +24,5 @@ my articles;
 - https://nicuflorica.blogspot.com/2019/10/alta-versiune-de-ceas-animat-cu-date.html
 
 - https://nicuflorica.blogspot.com/2019/11/alta-versiune-de-ceas-animat-cu-date.html
+
+- https://nicuflorica.blogspot.com/2020/04/alta-versiune-de-ceas-animat-cu-date.html
