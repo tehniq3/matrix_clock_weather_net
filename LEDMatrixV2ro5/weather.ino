@@ -97,6 +97,7 @@ void getWeatherData()
    
   weatherString = "       " + dayName[w]  + "  " + String(d) + "." + String(mo) + "." + String(ye)+ "      ";
   weatherString +=   String(temp, 1) + deg + "C ";
+  weatherString +=  "(" + String( tempMin,1) + " / " + String(tempMax, 1) + deg + "C ) ";
   weatherString += "  umiditate: " + String(humidity) + "%  ";  // Luftfeuchtigkeit
   weatherString += "  presiune: " + String(pressure) + "mmHg,  "; // Luftdruck
 
