@@ -205,7 +205,7 @@ void loop()
     dotTime = millis();
     dots = !dots;
   }
-//  getTimeLocal();
+  getTimeLocal();
   showAnimClock();
 
        if (millis() - tpmasura > 3000) 
